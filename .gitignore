@@ -1,0 +1,39 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Virtual environments (created by install_docling.* — easy to reinstall, 1.8+ GB) ---
+.venv/
+.venv-docling/
+venv/
+
+# --- Smoke-test output of the install scripts ---
+smoke_out/
+
+# --- Local docling artifacts (if run with --artifacts-path) ---
+artifacts/
+models/
+
+# --- Logs ---
+*.log
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# --- What IS kept in the repo (deliberately not ignored) ---
+#   input/     — source PDFs
+#   markdown/  — pymupdf4llm results
+#   output/    — docling results
+#   scripts + README
+#
+# Uncomment if conversion results are not needed in git:
+# output/
+# markdown/
+# test_docling/
+# test_markitdown/
